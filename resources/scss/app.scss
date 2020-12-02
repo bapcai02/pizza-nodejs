@@ -1,0 +1,61 @@
+@import './variables';
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
+
+
+body {
+    font-family: 'Lato', 'sans-serif';
+    -webkit-font-smoothing: antialiased;
+    color: $dark;
+}
+
+nav li:last-child a{
+    background: $primary;
+    &:hover{
+        background: $primary-hover;
+    }
+}
+
+nav li a:hover{
+    transition: $smooth;
+    &:hover{
+        color: $primary;
+    }
+}
+
+.hero{
+    background: $secondary;
+}
+
+.size{
+    background: $secondary;
+}
+
+.add-to-cart{
+    border:2px solid $primary;
+    color: $primary;
+    transition: $smooth;
+    &:hover{
+        background: $primary;
+        border-color: $pure;
+        color: $pure;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.order{
+    background: $primary;
+    transition: $smooth;
+    &:hover{
+        background: $primary-hover;
+    }
+}
+
+.cart{
+    background: $secondary;
+    .amount{
+        color: $primary;
+    }
+}
